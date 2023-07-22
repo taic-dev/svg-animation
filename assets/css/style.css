@@ -1,0 +1,185 @@
+html,
+body {
+  overflow: hidden;
+  font-family: Secular One, sans-serif;
+}
+
+body {
+  padding: 22px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+div {
+  margin-left: 30px;
+  margin-bottom: 16px;
+}
+
+div svg {
+  position: relative;
+  width: 200px;
+}
+
+.square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: 0;
+}
+
+.square-animation1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.star {
+  animation-name: star;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.line-star {
+  animation-name: line-star;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: center;
+}
+
+@keyframes line-star {
+  0% {
+    -webkit-clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+    clip-path: inset(0);
+  }
+}
+
+/*
+  X軸： 300.874px / 512px（キャンバスwidth） * 100% = 58.764453125%
+  Y軸： 258.704px / 512px（キャンバスheight） * 100% = 50.528125%
+*/
+.fish {
+  animation-name: fish;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin: 22.5% 11% ;
+}
+
+.fish2 {
+  animation-name: fish;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin:  13% 39.5% ;
+}
+
+@keyframes fish {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.father {
+  animation-name: father;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin: 90% 56%;
+}
+
+@keyframes father {
+  0% {
+    transform: rotate(-3deg)
+  }
+  100% {
+    transform: rotate(3deg)
+  }
+}
+
+.boy-head {
+  animation-name: boy-head;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin: 57.5% 55%;
+}
+
+@keyframes boy-head {
+  0% {
+    transform: rotateY(-180deg) translateX(5px);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.star {
+  animation-name: star;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star-line {
+  animation-name: star-line;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,end);
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+@keyframes star-line {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
