@@ -520,3 +520,24 @@ div svg {
     transform: rotate(0deg);
   }
 }
+
+.cushion {
+  animation-name: cushion;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 76.7% 61.1%;
+}
+
+@keyframes cushion {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
