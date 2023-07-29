@@ -541,3 +541,198 @@ div svg {
     transform: scale(1.1);
   }
 }
+
+.left-boy {
+  animation-name: left-boy;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 22.15% 47.5%;
+}
+
+@keyframes left-boy {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.left-boy-cap {
+  animation-name: left-boy-cap;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 21% 21.3%;
+}
+
+@keyframes left-boy-cap {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-7deg) translateY(-3px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  70% {
+    transform: rotate(7deg) translateY(-3px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bug-basket {
+  animation-name: bug-basket;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 19.15% 53.9%;
+}
+
+@keyframes bug-basket {
+  0% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1) rotate(3deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+}
+
+.right-girl {
+  animation-name: right-girl;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 74.7% 65.2%;
+}
+
+@keyframes right-girl {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.right-girl-cap {
+  animation-name: right-girl-cap;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 74.4% 43.2%;
+}
+
+@keyframes right-girl-cap {
+  0% {
+    transform: rotate(0deg) translateY(-3px);
+  }
+  20% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  70% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg) translateY(-3px);
+  }
+}
+
+.dust1 {
+  animation-name: dust;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 33.31% 85.4%;
+}
+
+@keyframes dust {
+  0% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+}
+
+.dust2 {
+  animation-name: dust2;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 49.8% 80.6%;
+}
+
+@keyframes dust2 {
+  0% {
+    opacity: 1;
+    transform: translateX(2px) rotate(-5deg);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(2px) rotate(-5deg);
+  }
+}
+
+.dust3 {
+  animation-name: dust3;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 91.5% 95.2%;
+}
+
+
+@keyframes dust3 {
+  0% {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+}
