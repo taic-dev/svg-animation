@@ -737,8 +737,8 @@ div svg {
   }
 }
 
-.girl-bike {
-  animation-name: girl-bike;
+.bike {
+  animation-name: bike;
   animation-duration: 2s;
   animation-delay: 0;
   animation-iteration-count: infinite;
@@ -746,7 +746,7 @@ div svg {
   transform-origin: 50% 50%;
 }
 
-@keyframes girl-bike {
+@keyframes bike {
   0% {
     transform: scale(0.9) translateY(1px);
   }
@@ -758,29 +758,8 @@ div svg {
   }
 }
 
-.girl-bike-helmet {
-  animation-name: girl-bike-helmet;
-  animation-duration: 2s;
-  animation-delay: 0;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: 70.94% 5.37%;
-}
-
-@keyframes girl-bike-helmet {
-    0% {
-    transform: rotate(0deg) translateY(-2px);
-  }
-  50% {
-    transform: rotate(0deg) translateY(0px);
-  }
-  100% {
-    transform: rotate(0deg) translateY(-2px);
-  }
-}
-
-.girl-bike-left-wheel {
-  animation-name: girl-bike-wheel;
+.bike-left-wheel {
+  animation-name: bike-wheel;
   animation-duration: 2s;
   animation-delay: 0;
   animation-iteration-count: infinite;
@@ -788,8 +767,8 @@ div svg {
   transform-origin: 17.985% 82.24%;
 }
 
-.girl-bike-right-wheel {
-  animation-name: girl-bike-wheel;
+.bike-right-wheel {
+  animation-name: bike-wheel;
   animation-duration: 2s;
   animation-delay: 0;
   animation-iteration-count: infinite;
@@ -797,7 +776,7 @@ div svg {
   transform-origin: 81.653% 82.57%;
 }
 
-@keyframes girl-bike-wheel {
+@keyframes bike-wheel {
   0% {
     transform: rotate(0deg);
   }
