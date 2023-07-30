@@ -89,7 +89,7 @@ div svg {
   animation-name: fish;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: steps(2,end);
+  animation-timing-function: linear;
   transform-origin: 22.5% 11% ;
 }
 
@@ -97,7 +97,7 @@ div svg {
   animation-name: fish;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: steps(2,end);
+  animation-timing-function: linear;
   transform-origin:  13% 39.5% ;
 }
 
@@ -105,26 +105,31 @@ div svg {
   0% {
     transform: rotate(20deg);
   }
+  50% {
+    transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(-20deg);
+    transform: rotate(20deg);
   }
 }
 
 .father {
   animation-name: father;
   animation-duration: 3s;
-  animation-delay: 2s;
   animation-iteration-count: infinite;
-  animation-timing-function: steps(2,end);
+  animation-timing-function: linear;
   transform-origin: 90% 56%;
 }
 
 @keyframes father {
   0% {
-    transform: rotate(-3deg)
+    transform: rotate(-3deg) scale(0.9)
+  }
+  50% {
+    transform: rotate(0deg) scale(0.92);
   }
   100% {
-    transform: rotate(3deg)
+    transform: rotate(-3deg) scale(0.9)
   }
 }
 
@@ -149,7 +154,6 @@ div svg {
 .star {
   animation-name: star;
   animation-duration: 3s;
-  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2,end);
   transform-origin: 50% 50%;
@@ -165,29 +169,9 @@ div svg {
   }
 }
 
-.star-line {
-  animation-name: star-line;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(2,end);
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
-
-@keyframes star-line {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .lets {
   animation-name: lets;
   animation-duration: 8s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(.44,.99,.48,0);
   transform: translateX(5px);
@@ -218,7 +202,6 @@ div svg {
 .enjoy {
   animation-name: enjoy;
   animation-duration: 8s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(.44,.99,.48,0);
   transform-origin: 12.12% 30.06%;
@@ -248,7 +231,6 @@ div svg {
 .left-men {
   animation-name: left-men;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 16.16% 64.33%;
@@ -275,7 +257,6 @@ div svg {
 .left-men-head {
   animation-name: left-men-head;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 14.14% 50.3%;
@@ -302,7 +283,6 @@ div svg {
 .right-men {
   animation-name: right-men;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 90.9% 68.5%;
@@ -329,7 +309,6 @@ div svg {
 .right-men-head {
   animation-name: right-men-head;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 92.4% 51.0%;
@@ -356,7 +335,6 @@ div svg {
 .fire {
   animation-name: fire;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 66.6% 42.6%;
@@ -383,7 +361,6 @@ div svg {
 .happy {
   animation-name: happy;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 16% 30.9%;
@@ -413,7 +390,6 @@ div svg {
 .left-girl-arm {
   animation-name: left-girl-arm;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 26% 96.3%;
@@ -437,7 +413,6 @@ div svg {
 .left-girl-face {
   animation-name: left-girl-face;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 26.5% 59.75%;
@@ -464,7 +439,6 @@ div svg {
 .right-girl-face {
   animation-name: right-girl-face;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 53.3% 58.5%;
@@ -497,7 +471,6 @@ div svg {
 .right-girl-arm {
   animation-name: right-girl-arm;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 46.5% 96.34%;
@@ -524,7 +497,6 @@ div svg {
 .cushion {
   animation-name: cushion;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 76.7% 61.1%;
@@ -545,7 +517,6 @@ div svg {
 .left-boy {
   animation-name: left-boy;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 22.15% 47.5%;
@@ -572,7 +543,6 @@ div svg {
 .left-boy-cap {
   animation-name: left-boy-cap;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 21% 21.3%;
@@ -599,7 +569,6 @@ div svg {
 .bug-basket {
   animation-name: bug-basket;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 19.15% 53.9%;
@@ -620,7 +589,6 @@ div svg {
 .right-girl {
   animation-name: right-girl;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 74.7% 65.2%;
@@ -641,7 +609,6 @@ div svg {
 .right-girl-cap {
   animation-name: right-girl-cap;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 74.4% 43.2%;
@@ -668,7 +635,6 @@ div svg {
 .dust1 {
   animation-name: dust;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 33.31% 85.4%;
@@ -692,7 +658,6 @@ div svg {
 .dust2 {
   animation-name: dust2;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 49.8% 80.6%;
